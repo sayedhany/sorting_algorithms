@@ -23,6 +23,8 @@ void bubble_sort(int *array, size_t size)
 	size_t i, j;
 	bool swaped;
 
+	if (array == NULL || size == 0)
+		return;
 	for (i = 0; i < size; i++)
 	{
 		swaped = false;
